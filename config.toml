@@ -15,7 +15,7 @@ acl = "private"               # ex: "private", "public-read"
 
 [pipeline]
 input_path = "./data/input"   # chemin local d'entrée
-output_path = "./data/output" # chemin local de sortie
+output_path = "./data/output" # chemin locdal de sortie
 max_workers = 4
 retry_count = 3
 enable_versioning = false
