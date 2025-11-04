@@ -3,7 +3,7 @@
 # Évitez de stocker des secrets en clair en production.
 
 [aws]
-region = "us-east-1"          # ex: "eu-west-1"
+region = "us-east-1"          # ex: "eu-west-zz1"
 endpoint = ""                 # ex: "https://s3.amazonaws.com" ou vide
 access_key_id = "YOUR_ACCESS_KEY_ID"
 secret_access_key = "YOUR_SECRET_ACCESS_KEY"
