@@ -1,0 +1,25 @@
+# config.toml - fichier de configuration très basique pour une pipeline S3
+# Remplacez les valeurs entre guillemets par vos paramètres réels.
+# Évitez de stocker des secrets en clair en production.
+
+[aws]
+region = "us-east-1"          # ex: "eu-west-1"
+endpoint = ""                 # ex: "https://s3.amazonaws.com" ou vide
+access_key_id = "YOUR_ACCESS_KEY_ID"
+secret_access_key = "YOUR_SECRET_ACCESS_KEY"
+
+[s3]
+bucket = "my-bucket"
+prefix = "pipeline/"          # préfixe (préfixe clé objet)
+acl = "private"               # ex: "private", "public-read"
+
+[pipeline]
+input_path = "./data/input"   # chemin local d'entrée
+output_path = "./data/output" # chemin local de sortie
+max_workers = 4
+retry_count = 3
+enable_versioning = false
+
+[logging]
+level = "info"                # "debug", "info", "warn", "error"
+format = "text"               # "text" ou "json"
