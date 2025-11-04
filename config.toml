@@ -11,7 +11,7 @@ secret_access_key = "YOUR_SECRET_ACCESS_KEY"
 [s3]
 bucket = "my-bucket"
 prefix = "pipeline/"          # préfixe (préfixe clé objet)
-acl = "private"               # ex: "private", "public-read"
+acl = "private"               # ex: "private", "c-read"
 
 [pipeline]
 input_path = "./data/input"   # chemin local d'entrée
